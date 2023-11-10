@@ -5,29 +5,45 @@ export default function Home() {
   return (
     <div className={styles.container}>
       <Head>
-        <title>Create Next App</title>
+        <title>COS30049 Application</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
       <main>
         <h1 className={styles.title}>
-          <a>Secure Your Contract, Act Now</a>
+          Audit and Secure Your Contract Now!
         </h1>
 
         <div className={styles.grid}>
-          <a href="./ContractAuditFrontEnd/upload" className={styles.card}>
+          <a href="upload" className={styles.card}>
             <h3>Upload &rarr;</h3>
-            <p>Audit your smart contract by uploading your contract (.sol)</p>
+            <p>Upload and audit new contract</p>
           </a>
-        </div>
-        <div className={styles.grid}>
-          <a href="./ContractAuditFrontEnd/list" className={styles.card}>
-            <h3>View Report &rarr;</h3>
-            <p>View audit report for previously uploaded contract</p>
+
+          <a href="example" className={styles.card}>
+            <h3>Example &rarr;</h3>
+            <p>View an example report</p>
+          </a>
+
+          <a
+            href="list"
+            className={styles.card}
+          >
+            <h3>History &rarr;</h3>
+            <p>View audit report from previous time</p>
+          </a>
+
+          <a
+            href="about"
+            className={styles.card}
+          >
+            <h3>About &rarr;</h3>
+            <p>
+              About this application
+            </p>
           </a>
         </div>
       </main>
-
 
       <style jsx>{`
         main {
@@ -38,25 +54,7 @@ export default function Home() {
           justify-content: center;
           align-items: center;
         }
-        footer {
-          width: 100%;
-          height: 100px;
-          border-top: 1px solid #eaeaea;
-          display: flex;
-          justify-content: center;
-          align-items: center;
-        }
-        footer img {
-          margin-left: 0.5rem;
-        }
-        footer a {
-          display: flex;
-          justify-content: center;
-          align-items: center;
-          text-decoration: none;
-          color: inherit;
-        }
-        code {
+        .highlight {
           background: #fafafa;
           border-radius: 5px;
           padding: 0.75rem;
